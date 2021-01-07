@@ -1,2 +1,2 @@
-web: gunicorn myProject.wsgi
+web: gunicorn esportz/esportz.wsgi
 release: python manage.py migrate
