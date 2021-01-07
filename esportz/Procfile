@@ -1,2 +1,2 @@
 web: gunicorn esportz/esportz.wsgi
-release: python manage.py migrate
+release: python esportz/manage.py migrate
