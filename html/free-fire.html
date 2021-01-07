@@ -1,0 +1,685 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Geco - eSports Gaming HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<style>
+    .transparent-header {
+        top: 0px;
+    }
+    
+    .success-message {
+        text-align: center;
+        max-width: 500px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .success-message__icon {
+        max-width: 75px;
+    }
+    
+    .success-message__title {
+        color: #3DC480;
+        transform: translateY(25px);
+        opacity: 0;
+        transition: all 200ms ease;
+    }
+    
+    .active .success-message__title {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .success-message__content {
+        color: #B8BABB;
+        transform: translateY(25px);
+        opacity: 0;
+        transition: all 200ms ease;
+        transition-delay: 50ms;
+    }
+    
+    .active .success-message__content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .icon-checkmark circle {
+        fill: #3DC480;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: transform 200ms cubic-bezier(0.22, 0.96, 0.38, 0.98);
+    }
+    
+    .icon-checkmark path {
+        transition: stroke-dashoffset 350ms ease;
+        transition-delay: 100ms;
+    }
+    
+    .active .icon-checkmark circle {
+        transform: scale(1);
+    }
+</style>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <img src="img/icon/preloader.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+    <header>
+        <div id="sticky-header" class="transparent-header" style="opacity: 0.8;">
+            <div class="container-fluid s-container-full-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-menu menu-style-two">
+                            <nav>
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo/esportz.png" height="80px" alt="Logo"></a>
+                                </div>
+                                <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                        </li>
+                                        <li class="show"><a href="#">Free Fire</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main-area -->
+    <main>
+
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb" style="background-image: url(img/images/freefire.jpeg);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="game-overview-img">
+                            <img src="img/logo/free-fire-logo.png" alt="" style="width:100% !important">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-6">
+                        <div class="breadcrumb-content text-center text-lg-left pl-80">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page" style="color: black;">Free Fire</li>
+                                </ol>
+                            </nav>
+                            <h2>Free <span style="color: black;">Fire</span></h2>
+                            <div class="game-overview-status">
+                                <ul style="color: white;">
+                                    <li style="color: white;"><span style="color: black;">Total Teams :</span> 150</li>
+                                    <li><span style="color: black;">Date :</span>January 21, 2020</li>
+                                    <li><span style="color: black;">Category :</span>Mobile</li>
+                                </ul>
+                            </div>
+                            <a href="#form" class="btn btn-style-two">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- game-single-area -->
+        <section class="game-single-area pt-120 pb-180">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="game-single-content game-overview-content">
+                            <div class="upcoming-game-head">
+                                <div class="uc-game-head-title">
+                                    <!-- <span>SEPTEMBER 22, 2020</span> -->
+                                    <h4>FORMAT</h4>
+                                </div>
+                            </div>
+                            <div class="game-single-info mb-45">
+
+                                <ul>
+                                    <li>150 Teams </li>
+                                    <li>Pre-Qualifiers 6 days, top 2 teams per group </li>
+                                    <li>Qualifiers 6 days, top 6 from each group</li>
+                                    <li>Finale | 3 days: 15 games | 5 games each day</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="game-single-title mt-50 mb-30">
+                                <h4>Good to Know</h4>
+                            </div> -->
+                            <!-- <div class="game-single-info mb-45">
+                                <ul>
+                                    <li><span>Category :</span> Vertical Shooter</li>
+                                    <li><span>Requirements :</span> PS4 , XBOX ONE , Steam</li>
+                                    <li><span>Multi player :</span> Games Controller System</li>
+                                    <li><span>Visual Effect :</span> Operating vero excepturi magnam System</li>
+                                </ul>
+                            </div>
+                            <p>Consectetur adipiscing elit. Suspendisse a mauris vitae lacus commodo iaculis eget vitae magna. Nam leohe a volutpat quis iaculis at, viverra id quam. Morbi pharetra, libero ut tempor finibus, metus massa pharetra dui, ornare
+                                pharetra felis risus eu quam.</p>
+                            <div class="row mt-55 mb-55">
+                                <div class="col-lg-6 order-0 order-lg-2">
+                                    <div class="overview-history-img">
+                                        <img src="img/images/overview_history_img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="game-single-title mb-15">
+                                        <h4>overview history</h4>
+                                    </div>
+                                    <div class="overview-history-content">
+                                        <p>Donec orci enim, bibendum a augue aliquet cursus quam. Pellentesque pulvinar, elit at condimentum dictum, sapien auctor tortoris vulputate sapien tortor et velit. Sed nulla nisi, congue eu quam vel, molestie grvida
+                                            ipsum. Curabi lacus vitae tellus lacinia pretium.</p>
+                                        <div class="overview-history-list">
+                                            <ul>
+                                                <li>
+                                                    <div class="overview-list-thumb">
+                                                        <img src="img/images/overview_history_thumb01.jpg" alt="">
+                                                    </div>
+                                                    <div class="overview-list-content">
+                                                        <h4><a href="#">CONSOLE UPDATE 6.2</a></h4>
+                                                        <span>1st place November 9, 2020</span>
+                                                    </div>
+                                                    <div class="overview-list-price">
+                                                        <h4>$100,000</h4>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="overview-list-thumb">
+                                                        <img src="img/images/overview_history_thumb02.jpg" alt="">
+                                                    </div>
+                                                    <div class="overview-list-content">
+                                                        <h4><a href="#">CONSOLE UPDATE 6.2</a></h4>
+                                                        <span>1st place November 9, 2020</span>
+                                                    </div>
+                                                    <div class="overview-list-price">
+                                                        <h4>$50,000</h4>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <p class="mb-0">Donec orci enim, bibendum a augue quis, aliquet cursus quam. Pellentesque pulvinar, elit at condimentum dictum, sapien nibh auctor tortoris vulputate sapien tortor et velit. Sed nulla nisi, congue eu quam vel, molestie grvida
+                                ipsum. Curabitr ut lacus vitae tellus lacinia pretium. Proin vestibulum sollcitudin tortor, quis auctor mi rutrum non. Donec non eros eget purus lobortis imperdiet ac vitae est. Interdum et masuda fames ac ante ipsum primis
+                                in faucibus. Duis ultricies mi sed lorem blandit, non sodales sapien fermentum. Donec ultricies, turpis a sagittis suscipit</p>
+                            <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
+
+                            <form id="form">
+                                <div class="game-single-title mb-15">
+                                    <h4>Team Details</h4>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input required type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4">Team Name</label>
+                                        <input required type="text" class="form-control" id="inputPassword4" placeholder="Team Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="image">Team Logo</label>
+                                        <input required type="file" accept="images/*" class="form-control" id="image" placeholder="Team Logo">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress">IGL/Manager Real Name</label>
+                                        <input required type="text" class="form-control" id="inputAddress" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2">IGL/Manager Whatsapp Number</label>
+                                        <input required type="text" class="form-control" id="inputAddress2" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress2">IGL/Manager Discord ID</label>
+                                        <input required type="text" class="form-control" id="inputAddress2" placeholder="Username #0000">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="game-single-title mb-15">
+                                    <h4>Player Details</h4>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 1</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input required class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 2</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input required class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 3</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input required class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 4</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input required class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input required class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 5(Subsitute)</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Player 6(Subsitute)</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" placeholder="abc@gmail.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input class="form-control" placeholder="1234567890">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>UID</label>
+                                        <input class="form-control" placeholder="UID">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <button id="register" type="submit" class="btn btn-style-two">Register</button>
+                            </form>
+                            <div class="success-message">
+                                <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+                                    <circle cx="38" cy="38" r="36"/>
+                                    <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.7,40.9l10.9,10.9l28.7-28.7"/>
+                                </svg>
+                                <h1 class="success-message__title">Registered Successfully</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- game-single-area-end -->
+        <section class="container">
+
+        </section>
+    </main>
+    <!-- main-area-end -->
+
+    <!-- footer-area -->
+    <!-- <footer>
+            <div class="footer-top footer-bg s-footer-bg">
+                <div class="newsletter-area s-newsletter-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="newsletter-wrap">
+                                    <div class="section-title newsletter-title">
+                                        <h2>Our <span>Newsletter</span></h2>
+                                    </div>
+                                    <div class="newsletter-form">
+                                        <form action="#">
+                                            <div class="newsletter-form-grp">
+                                                <i class="far fa-envelope"></i>
+                                                <input type="email" placeholder="Enter your email...">
+                                            </div>
+                                            <button>SUBSCRIBE <i class="fas fa-paper-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
+                                                lan West new queens</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Products</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Graphics (26)</a></li>
+                                        <li><a href="#">Backgrounds (11)</a></li>
+                                        <li><a href="#">Fonts (9)</a></li>
+                                        <li><a href="#">Music (3)</a></li>
+                                        <li><a href="#">Photography (3)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Need Help?</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">FAQUse Cases</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Follow us</h5>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Newsletter Sign Up</h5>
+                                </div>
+                                <div class="footer-newsletter">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your email">
+                                        <button><i class="fas fa-rocket"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-fire"><img src="img/images/footer_fire.png" alt=""></div>
+                <div class="footer-fire footer-fire-right"><img src="img/images/footer_fire.png" alt=""></div>
+            </div>
+            <div class="copyright-wrap s-copyright-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright-text">
+                                <p>Copyright © 2020 <a href="#">Geco</a> All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 d-none d-md-block">
+                            <div class="payment-method-img text-right">
+                                <img src="img/images/card_img.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/jquery.odometer.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<script>
+    function PathLoader(el) {
+        this.el = el;
+        this.strokeLength = el.getTotalLength();
+
+        // set dash offset to 0
+        this.el.style.strokeDasharray =
+            this.el.style.strokeDashoffset = this.strokeLength;
+    }
+
+    PathLoader.prototype._draw = function(val) {
+        this.el.style.strokeDashoffset = this.strokeLength * (1 - val);
+    }
+
+    PathLoader.prototype.setProgress = function(val, cb) {
+        this._draw(val);
+        if (cb && typeof cb === 'function') cb();
+    }
+
+    PathLoader.prototype.setProgressFn = function(fn) {
+        if (typeof fn === 'function') fn(this);
+    }
+
+    // document.addEventListener('click', function() {
+    //     document.body.classList.add('active');
+    //     svg.setProgress(1);
+    // });
+    $('#register').click(function() {
+        // document.body.classList.add('active');
+        // svg.setProgress(1);
+
+        var body = document.body,
+            svg = document.querySelector('svg path');
+
+        if (svg !== null) {
+            svg = new PathLoader(svg);
+
+            setTimeout(function() {
+                document.body.classList.add('active');
+                svg.setProgress(1);
+            }, 200);
+        }
+        $('#form').hide();
+
+    })
+</script>
+
+</html>
