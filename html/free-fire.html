@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Geco - eSports Gaming HTML5 Template</title>
+    <title>Esportz Premier Series</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM"></script>
 </head>
 
 <style>
@@ -84,6 +85,74 @@
     .active .icon-checkmark circle {
         transform: scale(1);
     }
+    
+    @font-face {
+        font-family: bebasNeue;
+        src: url(fonts/BebasNeue-Book.ttf);
+    }
+    
+    @font-face {
+        font-family: gotham;
+        src: url(fonts/Gotham\ Bold.otf);
+    }
+    
+    body {
+        font-family: gotham !important;
+    }
+    
+    .spinner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 60px;
+        width: 60px;
+        margin: 0px auto;
+        -webkit-animation: rotation .6s infinite linear;
+        -moz-animation: rotation .6s infinite linear;
+        -o-animation: rotation .6s infinite linear;
+        animation: rotation .6s infinite linear;
+        border-left: 6px solid rgba(0, 174, 239, .15);
+        border-right: 6px solid rgba(0, 174, 239, .15);
+        border-bottom: 6px solid rgba(0, 174, 239, .15);
+        border-top: 6px solid rgba(0, 174, 239, .8);
+        border-radius: 100%;
+    }
+    
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+    }
+    
+    @-moz-keyframes rotation {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            -moz-transform: rotate(359deg);
+        }
+    }
+    
+    @-o-keyframes rotation {
+        from {
+            -o-transform: rotate(0deg);
+        }
+        to {
+            -o-transform: rotate(359deg);
+        }
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
 </style>
 
 <body>
@@ -96,16 +165,20 @@
             </div>
         </div>
     </div>
+
+    <div id='loading' class="" style="position: fixed; width: 100%; height: 100%; position: fixed; background-color: black; opacity: 0.5; z-index: 99; display: none;">
+        <div class="spinner"></div>
+    </div>
     <!-- preloader-end -->
     <header>
-        <div id="sticky-header" class="transparent-header" style="opacity: 0.8;">
+        <div id="sticky-header" class="transparent-header">
             <div class="container-fluid s-container-full-padding">
                 <div class="row">
                     <div class="col-12">
                         <div class="main-menu menu-style-two">
                             <nav>
                                 <div class="logo">
-                                    <a href="index.html"><img src="img/logo/esportz.png" height="80px" alt="Logo"></a>
+                                    <a href="index.html"><img src="img/logo/epslogo3.png" height="80px" alt="Logo"></a>
                                 </div>
                                 <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                     <ul>
@@ -140,15 +213,15 @@
                         <div class="breadcrumb-content text-center text-lg-left pl-80">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page" style="color: black;">Free Fire</li>
+                                    <li class="breadcrumb-item"><a href="index.html" style="color: black;">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page" style="color: white;">Free Fire</li>
                                 </ol>
                             </nav>
-                            <h2>Free <span style="color: black;">Fire</span></h2>
+                            <!-- <h2>Free <span style="color: black;">Fire</span></h2> -->
                             <div class="game-overview-status">
                                 <ul style="color: white;">
                                     <li style="color: white;"><span style="color: black;">Total Teams :</span> 150</li>
-                                    <li><span style="color: black;">Date :</span>January 23, 2020</li>
+                                    <li><span style="color: black;">Date :</span>January 23, 2021</li>
                                     <li><span style="color: black;">Category :</span>Mobile</li>
                                 </ul>
                             </div>
@@ -180,6 +253,12 @@
                                     <li>Qualifiers 6 days, top 6 from each group</li>
                                     <li>Finale | 3 days: 15 games | 5 games each day</li>
                                 </ul>
+                            </div>
+                            <div class="upcoming-game-head w-100 text-center">
+                                <div class="uc-game-head-title">
+                                    <!-- <span>SEPTEMBER 22, 2020</span> -->
+                                    <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
+                                </div>
                             </div>
                             <!-- <div class="game-single-title mt-50 mb-30">
                                 <h4>Good to Know</h4>
@@ -243,34 +322,34 @@
                                 in faucibus. Duis ultricies mi sed lorem blandit, non sodales sapien fermentum. Donec ultricies, turpis a sagittis suscipit</p>
                             <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
 
-                            <form id="form">
+                            <form id="form" method="POST" style="display: none;">
                                 <div class="game-single-title mb-15">
                                     <h4>Team Details</h4>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Email</label>
-                                        <input required type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="Email" name="email">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputPassword4">Team Name</label>
-                                        <input required type="text" class="form-control" id="inputPassword4" placeholder="Team Name" name="teamName">
+                                        <label>Team Name</label>
+                                        <input required type="text" class="form-control" placeholder="Team Name" name="teamName">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="image">Team Logo</label>
-                                        <input required type="file" accept="images/*" class="form-control" id="image" placeholder="Team Logo" name="logo">
+                                        <label>Team Logo</label>
+                                        <input required type="file" accept="images/*" class="form-control" placeholder="Team Logo" name="logo">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputAddress">IGL/Manager Real Name</label>
-                                        <input required type="text" class="form-control" id="inputAddress" placeholder="Name" name="manager">
+                                        <label>IGL/Manager Real Name</label>
+                                        <input required type="text" class="form-control" placeholder="Name" name="manager">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputAddress2">IGL/Manager Whatsapp Number</label>
-                                        <input required type="text" class="form-control" id="inputAddress2" placeholder="1234567890" name="contact">
+                                        <label>IGL/Manager Whatsapp Number</label>
+                                        <input required type="number" class="form-control" placeholder="1234567890" name="contact" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputAddress2">IGL/Manager Discord ID</label>
-                                        <input required type="text" class="form-control" id="inputAddress2" placeholder="Username #0000" name="discord">
+                                        <label>IGL/Manager Discord ID</label>
+                                        <input required type="text" class="form-control" placeholder="Username #0000" name="discord">
                                     </div>
                                 </div>
                                 <br>
@@ -293,7 +372,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player1_contact">
+                                        <input required class="form-control" placeholder="1234567890" name="player1_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -301,7 +380,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player1_UID">
+                                        <input required class="form-control" placeholder="UID" name="player1_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -324,7 +403,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player2_contact">
+                                        <input required class="form-control" placeholder="1234567890" name="player2_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -332,7 +411,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player2_UID">
+                                        <input required class="form-control" placeholder="UID" name="player2_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -355,7 +434,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player3_contact">
+                                        <input required class="form-control" placeholder="1234567890" name="player3_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -363,7 +442,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player3_UID">
+                                        <input required class="form-control" placeholder="UID" name="player3_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -386,7 +465,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player4_contact">
+                                        <input required class="form-control" placeholder="1234567890" name="player4_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -394,7 +473,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player4_UID">
+                                        <input required class="form-control" placeholder="UID" name="player4_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -417,7 +496,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input class="form-control" placeholder="1234567890" name="player5_contact">
+                                        <input class="form-control" placeholder="1234567890" name="player5_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -425,7 +504,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input class="form-control" placeholder="UID" name="player5_UID">
+                                        <input class="form-control" placeholder="UID" name="player5_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -448,7 +527,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input class="form-control" placeholder="1234567890" name="player6_contact">
+                                        <input class="form-control" placeholder="1234567890" name="player6_contact" type="number" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -456,14 +535,23 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>UID</label>
-                                        <input class="form-control" placeholder="UID" name="player6_UID">
+                                        <input class="form-control" placeholder="UID" name="player6_UID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
                                         <input type="file" accept="images/*" class="form-control" placeholder="Email" name="player6_photo">
                                     </div>
                                 </div>
-                                <button id="register" type="submit" class="btn btn-style-two">Register</button>
+
+
+                                <!-- <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" data-recaptcha="true"  data-error="Please complete the Captcha">
+                                    <div class="help-block with-errors"></div>
+                                </div> -->
+                                <!-- <button id="register" type="submit" class="btn btn-style-two g-recaptcha" data-sitekey="6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM" data-callback='onSubmit'>Register</button> -->
+                                <button id="register" type="button" class="btn btn-style-two">Register</button>
+
                             </form>
                             <div class="success-message">
                                 <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
@@ -658,36 +746,124 @@
         if (typeof fn === 'function') fn(this);
     }
 
+    // $('#form').submit(function(event) {
+
+    //     var formData = new FormData($('#form')[0]);
+    //     formData['g-recaptcha-response'] = localStorage.getItem('key');
+    //     $.ajax({
+    //         url: 'http://127.0.0.1:8000/',
+    //         type: 'post',
+    //         dataType: 'json',
+    //         data: formData,
+    //         success: function(data) {
+    //             alert(data)
+    //         },
+    //         cache: false,
+    //         contentType: false,
+    //         processData: false
+    //     });
+    //     event.preventDefault();
+    //     document.body.classList.add('active');
+
+    //     var body = document.body,
+    //         svg = document.querySelector('svg path');
+
+    //     if (svg !== null) {
+    //         svg = new PathLoader(svg);
+
+    //         setTimeout(function() {
+    //             document.body.classList.add('active');
+    //             svg.setProgress(1);
+    //         }, 200);
+    //     }
+    //     $('#form').hide();
+    // });
+
+
     $('#form').submit(function(event) {
-        var formData = new FormData(this);
-        $.ajax({
-            url: 'http://127.0.0.1:8000/',
-            type: 'post',
-            dataType: 'json',
-            data: formData,
-            success: function(data) {
-                alert(data)
-            },
-            cache: false,
-            contentType: false,
-            processData: false
-        });
+        $('#loading').show();
         event.preventDefault();
-        document.body.classList.add('active');
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM', {
+                action: 'form'
+            }).then(function(token) {
 
-        var body = document.body,
-            svg = document.querySelector('svg path');
+                var formData = new FormData($('#form')[0]);
+                formData.append('g-recaptcha-response', token)
+                $.ajax({
+                    url: 'https://esportz-regs.herokuapp.com/',
+                    // url: 'http://127.0.0.1:8000/',
+                    type: 'post',
+                    dataType: 'json',
+                    data: formData,
+                    success: function(data) {
+                        // alert(data);
+                        if (data['data'] == 1) {
+                            document.body.classList.add('active');
 
-        if (svg !== null) {
-            svg = new PathLoader(svg);
+                            var body = document.body,
+                                svg = document.querySelector('svg path');
 
-            setTimeout(function() {
-                document.body.classList.add('active');
-                svg.setProgress(1);
-            }, 200);
-        }
-        $('#form').hide();
+                            if (svg !== null) {
+                                svg = new PathLoader(svg);
+
+                                setTimeout(function() {
+                                    document.body.classList.add('active');
+                                    svg.setProgress(1);
+                                }, 200);
+                            }
+                            $('#form').hide();
+                            $('#loading').hide();
+                        }
+                    },
+                    error: function() {
+                        alert("Error Occured Please Reload the page and fill the form again.");
+                        $('#loading').hide();
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+        });
+
     });
+
+    function onSubmit(token) {
+        localStorage.setItem('key', token);
+    }
+    // function onSubmit(token) {
+    //     console.log(token);
+
+    //     var formData = new FormData($('#form')[0]);
+    //     $.ajax({
+    //         url: 'http://esportz-regs.herokuapp.com/',
+    //         type: 'post',
+    //         dataType: 'json',
+    //         data: formData,
+    //         success: function(data) {
+    //             alert(data)
+    //         },
+    //         cache: false,
+    //         contentType: false,
+    //         processData: false
+    //     });
+    //     event.preventDefault();
+    //     document.body.classList.add('active');
+
+    //     var body = document.body,
+    //         svg = document.querySelector('svg path');
+
+    //     if (svg !== null) {
+    //         svg = new PathLoader(svg);
+
+    //         setTimeout(function() {
+    //             document.body.classList.add('active');
+    //             svg.setProgress(1);
+    //         }, 200);
+    //     }
+    //     $('#form').hide();
+    // }
 </script>
 
 </html>

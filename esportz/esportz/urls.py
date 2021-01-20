@@ -23,4 +23,6 @@ admin.site.index_title= 'Esportz Administration'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', submit),
+    path('excel', excel),
+    path('email', email),
 ]
