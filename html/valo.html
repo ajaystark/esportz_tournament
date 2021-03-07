@@ -186,13 +186,12 @@
                                     <ul>
                                         <li><a href="index.html">Home</a>
                                         </li>
-                                        <li class="show"><a href="#">Free Fire</a>
-                                        </li>
 
+                                        <li><a href="free-fire.html">Free Fire</a>
+                                        </li>
                                         <li><a href="fifa.html">Fifa</a>
                                         </li>
-
-                                        <li><a href="valo.html" style="color: white;">Valorant</a>
+                                        <li class="show"><a href="#">Valorant</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -209,12 +208,12 @@
     <main>
 
         <!-- breadcrumb-area -->
-        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb" style="background-image: url(img/images/freefire.jpeg);">
+        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb" style="background-image: url(img/images/valorant.jpeg);">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-4 col-lg-6">
                         <div class="game-overview-img">
-                            <img src="img/logo/free-fire-logo.png" alt="" style="width:100% !important">
+                            <img src="img/logo/valo_logo.png" alt="" style="width:100% !important">
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-6">
@@ -222,15 +221,15 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html" style="color: black;">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page" style="color: white;">Free Fire</li>
+                                    <li class="breadcrumb-item active" aria-current="page" style="color: white;">Valorant</li>
                                 </ol>
                             </nav>
                             <!-- <h2>Free <span style="color: black;">Fire</span></h2> -->
                             <div class="game-overview-status">
                                 <ul style="color: white;">
                                     <li style="color: white;"><span style="color: black;">Total Teams :</span> 150</li>
-                                    <li><span style="color: black;">Date :</span>5th March - 20th March</li>
-                                    <li><span style="color: black;">Category :</span>Mobile</li>
+                                    <li><span style="color: black;">Date :</span>5th April - 20th April</li>
+                                    <li><span style="color: black;">Category :</span>PC</li>
                                 </ul>
                             </div>
                             <a href="#form" class="btn btn-style-two">Register</a>
@@ -262,7 +261,7 @@
                                     <li>Finale | 3 days: 15 games | 5 games each day</li>
                                 </ul>
                             </div>
-                            <div class="upcoming-game-head w-100 text-center">
+                            <div class="upcoming-game-head w-100 text-center" style="display: none;">
                                 <div class="uc-game-head-title">
                                     <!-- <span>SEPTEMBER 22, 2020</span> -->
                                     <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
@@ -330,7 +329,7 @@
                                 in faucibus. Duis ultricies mi sed lorem blandit, non sodales sapien fermentum. Donec ultricies, turpis a sagittis suscipit</p>
                             <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
 
-                            <form id="form" method="POST" style="display: none;">
+                            <form id="form" method="POST">
                                 <div class="game-single-title mb-15">
                                     <h4>Team Details</h4>
                                 </div>
@@ -387,8 +386,8 @@
                                         <input required class="form-control" placeholder="Name" name="player1_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player1_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input required class="form-control" placeholder="Riot ID" name="player1_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -418,8 +417,8 @@
                                         <input required class="form-control" placeholder="Name" name="player2_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player2_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input required class="form-control" placeholder="Riot ID" name="player2_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -449,8 +448,8 @@
                                         <input required class="form-control" placeholder="Name" name="player3_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player3_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input required class="form-control" placeholder="Riot ID" name="player3_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -480,8 +479,8 @@
                                         <input required class="form-control" placeholder="Name" name="player4_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input required class="form-control" placeholder="UID" name="player4_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input required class="form-control" placeholder="Riot ID" name="player4_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -511,8 +510,8 @@
                                         <input class="form-control" placeholder="Name" name="player5_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input class="form-control" placeholder="UID" name="player5_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input class="form-control" placeholder="Riot ID" name="player5_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -542,8 +541,8 @@
                                         <input class="form-control" placeholder="Name" name="player6_IGN">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>UID</label>
-                                        <input class="form-control" placeholder="UID" name="player6_UID" maxlength="10">
+                                        <label>Riot ID</label>
+                                        <input class="form-control" placeholder="Riot ID" name="player6_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Photo</label>
@@ -914,8 +913,8 @@
                 var formData = new FormData($('#form')[0]);
                 formData.append('g-recaptcha-response', token)
                 $.ajax({
-                    url: 'https://esportz-regs.herokuapp.com/',
-                    // url: 'http://127.0.0.1:8000/',
+                    // url: 'https://esportz-regs.herokuapp.com/valo_submit',
+                    url: 'http://127.0.0.1:8000/valo_submit',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
