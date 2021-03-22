@@ -227,7 +227,7 @@
                             <!-- <h2>Free <span style="color: black;">Fire</span></h2> -->
                             <div class="game-overview-status">
                                 <ul style="color: white;">
-                                    <li style="color: white;"><span style="color: black;">Total Teams :</span> 150</li>
+                                    <li style="color: white;"><span style="color: black;">Total Teams :</span> 256</li>
                                     <li><span style="color: black;">Date :</span>5th April - 20th April</li>
                                     <li><span style="color: black;">Category :</span>PC</li>
                                 </ul>
@@ -255,7 +255,7 @@
                             <div class="game-single-info mb-45">
 
                                 <ul>
-                                    <li>150 Teams </li>
+                                    <li>256 Teams </li>
                                     <li>Pre-Qualifiers 6 days, top 2 teams per group </li>
                                     <li>Qualifiers 6 days, top 6 from each group</li>
                                     <li>Finale | 3 days: 15 games | 5 games each day</li>
@@ -346,18 +346,18 @@
                                         <label>Team Logo</label>
                                         <input required type="file" class="form-control" placeholder="Team Logo" name="logo">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <label>IGL/Manager Real Name</label>
                                         <input required type="text" class="form-control" placeholder="Name" name="manager">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group col-md-6">
                                         <label>IGL/Manager Whatsapp Number</label>
                                         <input required type="number" class="form-control" placeholder="1234567890" name="contact" maxlength="10">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <label>IGL/Manager Discord ID</label>
                                         <input required type="text" class="form-control" placeholder="Username #0000" name="discord">
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <br>
                                 <div class="game-single-title mb-15">
@@ -390,8 +390,8 @@
                                         <input required class="form-control" placeholder="Riot ID" name="player1_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player1_photo">
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player1_discord">
                                     </div>
                                 </div>
 
@@ -421,8 +421,8 @@
                                         <input required class="form-control" placeholder="Riot ID" name="player2_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player2_photo">
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player2_discord">
                                     </div>
                                 </div>
 
@@ -452,8 +452,8 @@
                                         <input required class="form-control" placeholder="Riot ID" name="player3_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player3_photo">
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player3_discord">
                                     </div>
                                 </div>
 
@@ -483,17 +483,49 @@
                                         <input required class="form-control" placeholder="Riot ID" name="player4_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player4_photo">
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player4_discord">
                                     </div>
                                 </div>
 
+                                
                                 <div class="game-single-info">
-                                    <h4 style="color: #413f3f;">Player 5(Subsitute)</h4>
+                                    <h4 style="color: #413f3f;">Player 5</h4>
                                 </div>
                                 <div class="form-row">
 
                                     <div class="form-group col-md-6">
+                                        <label>Name</label>
+                                        <input required class="form-control" placeholder="Name" name="player5_name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="abc@gmail.com" name="player5_email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required class="form-control" placeholder="1234567890" name="player5_contact" type="number" maxlength="10">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name</label>
+                                        <input required class="form-control" placeholder="Name" name="player5_IGN">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Riot ID</label>
+                                        <input required class="form-control" placeholder="Riot ID" name="player5_riotID" maxlength="10">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player5_discord">
+                                    </div>
+                                </div>
+
+                                <div class="game-single-info">
+                                    <h4 style="color: #413f3f;">Substitute 1</h4>
+                                </div>
+                                <div class="form-row">
+
+                                    <!-- <div class="form-group col-md-6">
                                         <label>Name</label>
                                         <input class="form-control" placeholder="Name" name="player5_name">
                                     </div>
@@ -504,27 +536,27 @@
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
                                         <input class="form-control" placeholder="1234567890" name="player5_contact" type="number" maxlength="10">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
-                                        <input class="form-control" placeholder="Name" name="player5_IGN">
+                                        <input class="form-control" placeholder="Name" name="player6_IGN">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <label>Riot ID</label>
                                         <input class="form-control" placeholder="Riot ID" name="player5_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player5_photo">
-                                    </div>
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player5_discord">
+                                    </div> -->
                                 </div>
 
                                 <div class="game-single-info">
-                                    <h4 style="color: #413f3f;">Player 6(Subsitute)</h4>
+                                    <h4 style="color: #413f3f;">Substitute  2</h4>
                                 </div>
                                 <div class="form-row">
 
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <label>Name</label>
                                         <input class="form-control" placeholder="Name" name="player6_name">
                                     </div>
@@ -535,19 +567,19 @@
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
                                         <input class="form-control" placeholder="1234567890" name="player6_contact" type="number" maxlength="10">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
-                                        <input class="form-control" placeholder="Name" name="player6_IGN">
+                                        <input class="form-control" placeholder="Name" name="player7_IGN">
                                     </div>
-                                    <div class="form-group col-md-6">
+                                    <!-- <div class="form-group col-md-6">
                                         <label>Riot ID</label>
                                         <input class="form-control" placeholder="Riot ID" name="player6_riotID" maxlength="10">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label>Photo</label>
-                                        <input type="file" class="form-control" placeholder="Email" name="player6_photo">
-                                    </div>
+                                        <label>Discord ID</label>
+                                        <input class="form-control" placeholder="Discord" name="player6_discord">
+                                    </div> -->
                                 </div>
 
 
