@@ -25,4 +25,8 @@ urlpatterns = [
     path('', submit),
     path('excel', excel),
     path('email', email),
+    path('fifa_submit', fifa_submit),
+    path('fifa_excel', fifa_excel),
+    path('valo_submit', valo_submit),
+    path('valo_excel', valo_excel),
 ]
