@@ -211,11 +211,13 @@
 
     <!-- main-area -->
     <main>
-
+        <div class="d-md-none d-block my-5">
+            <br><br>
+        </div>
         <section class="w-100">
-            <img id='image' src="img/backgrounds/valoCLose.png" class="main-bg" alt="">
+            <img id='image' src="img/backgrounds/valoOpen.png" class="main-bg" alt="">
         </section>
-        <section>
+        <section class="d-none">
             <div class="upcoming-game-head w-100 text-center my-5">
                 <div class="uc-game-head-title text-center w-100">
                     <!-- <span>SEPTEMBER 22, 2020</span> -->
@@ -224,6 +226,26 @@
             </div>
 
         </section>
+        <div class="container my-5 px-5">
+            <div class="row justify-content-center">
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">256 Players</h5>
+                </div>
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">Every Participant must be able to stream his perspective</h5>
+                </div>
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;"> Every participant should have PS4</h5>
+                </div>
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">Must have a FIFA 2021 account</h5>
+                </div>
+
+            </div>
+        </div>
         <!-- breadcrumb-area -->
         <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb d-none" style="background-image: url(img/images/valorant.jpeg);">
             <div class="container">
@@ -258,18 +280,18 @@
         <!-- breadcrumb-area-end -->
 
         <!-- game-single-area -->
-        <section class="game-single-area pt-120 pb-180 d-none">
+        <section class="game-single-area py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="game-single-content game-overview-content">
-                            <div class="upcoming-game-head">
+                            <div class="upcoming-game-head d-none">
                                 <div class="uc-game-head-title">
                                     <!-- <span>SEPTEMBER 22, 2020</span> -->
                                     <h4>FORMAT</h4>
                                 </div>
                             </div>
-                            <div class="game-single-info mb-45">
+                            <div class="game-single-info mb-45 d-none">
 
                                 <ul>
                                     <li>256 Teams </li>
@@ -278,7 +300,7 @@
                                     <li>Finale | 3 days: 15 games | 5 games each day</li>
                                 </ul>
                             </div>
-                            <div class="upcoming-game-head w-100 text-center">
+                            <div class="upcoming-game-head w-100 text-center d-none">
                                 <div class="uc-game-head-title">
                                     <!-- <span>SEPTEMBER 22, 2020</span> -->
                                     <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
@@ -346,7 +368,7 @@
                                 in faucibus. Duis ultricies mi sed lorem blandit, non sodales sapien fermentum. Donec ultricies, turpis a sagittis suscipit</p>
                             <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
 
-                            <form id="form" method="POST" style="display: none;">
+                            <form id="form" method="POST">
                                 <div class="game-single-title mb-15">
                                     <h4>Team Details</h4>
                                 </div>
