@@ -136,7 +136,7 @@ def submit(request):
 @csrf_exempt
 def excel(request):
     try:
-        regs=FreeFire2.objects.all()
+        regs=FreeFire.objects.all()
         
         email=[]
         teamName=[]

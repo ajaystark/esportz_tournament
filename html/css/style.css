@@ -128,7 +128,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     color: #fff;
     margin-top: 0px;
     font-style: normal;
@@ -614,7 +614,7 @@ ul.minicart .cart-content a:hover,
     line-height: 1;
     position: relative;
     z-index: 1;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
 }
 
 .navbar-wrap ul li.show a::before,
@@ -957,7 +957,7 @@ ul.minicart .cart-price .new {
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     line-height: 1;
     letter-spacing: 2px;
     margin-right: 5px;
@@ -991,7 +991,7 @@ ul.minicart .cart-price .new {
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
 }
 
 .t-header-top-area .header-top-login ul li a {
@@ -1001,7 +1001,7 @@ ul.minicart .cart-price .new {
     color: #cfcdcd;
     font-weight: 700;
     font-size: 11px;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     padding: 2px 23px 2px 7px;
     border-top: 2px solid #2a2b37;
     border-bottom: 2px solid #2a2b37;
@@ -1146,7 +1146,7 @@ ul.minicart .cart-price .new {
 
 .header-style-four .header-social span {
     color: #fff;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     font-weight: 700;
     margin-right: 15px;
 }
@@ -2708,7 +2708,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(233, 163, 1, 0.749);
+    /* background-color: rgba(233, 163, 1, 0.749); */
     transition: .3s linear;
     opacity: 0;
 }
@@ -3662,7 +3662,7 @@ ul.minicart .cart-price .new {
     font-size: 12px;
     font-weight: 600;
     color: #e8a301;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     margin-bottom: 6px;
 }
 
@@ -4103,7 +4103,7 @@ ul.minicart .cart-price .new {
     font-size: 12px;
     text-transform: uppercase;
     color: #252525;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     font-weight: 800;
     line-height: 1;
     display: inline-block;
@@ -4185,7 +4185,7 @@ ul.minicart .cart-price .new {
     font-size: 14px;
     text-transform: uppercase;
     color: #dcdada;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     font-weight: 800;
 }
 
@@ -4371,7 +4371,7 @@ ul.minicart .cart-price .new {
 .sidebar-trend-match-action {
     font-size: 22px;
     font-weight: 800;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     display: flex;
     align-items: center;
 }
@@ -4419,7 +4419,7 @@ ul.minicart .cart-price .new {
     border: 1px solid #2b2b2b;
     font-size: 14px;
     font-weight: 800;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     line-height: 1;
     padding: 15px 20px;
 }
@@ -4725,7 +4725,7 @@ ul.minicart .cart-price .new {
     font-size: 14px;
     font-weight: 800;
     line-height: 1;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
     padding: 16px 24px;
 }
 
@@ -4972,7 +4972,7 @@ ul.minicart .cart-price .new {
     font-size: 14px;
     font-weight: 800;
     color: #6d6d6d;
-    font-family: 'Oxanium', cursive;
+    font-family: gotham;
 }
 
 .community-wrap tr th:first-child {

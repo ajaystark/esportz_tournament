@@ -27,11 +27,16 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM"></script>
 
     <link rel="stylesheet" href="css/icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/new.css">
 </head>
 
 <style>
     .transparent-header {
         top: 0px;
+    }
+    
+    .navbar-wrap ul li a::before {
+        background-color: #fa4454;
     }
     
     .success-message {
@@ -207,8 +212,20 @@
     <!-- main-area -->
     <main>
 
+        <section class="w-100">
+            <img id='image' src="img/backgrounds/valoCLose.png" class="main-bg" alt="">
+        </section>
+        <section>
+            <div class="upcoming-game-head w-100 text-center my-5">
+                <div class="uc-game-head-title text-center w-100">
+                    <!-- <span>SEPTEMBER 22, 2020</span> -->
+                    <h3 style="color: black;">BUT DONT WORRY YOU CAN REGISTER FOR NEXT TOURNAMENT</h3>
+                </div>
+            </div>
+
+        </section>
         <!-- breadcrumb-area -->
-        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb" style="background-image: url(img/images/valorant.jpeg);">
+        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb d-none" style="background-image: url(img/images/valorant.jpeg);">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-4 col-lg-6">
@@ -241,7 +258,7 @@
         <!-- breadcrumb-area-end -->
 
         <!-- game-single-area -->
-        <section class="game-single-area pt-120 pb-180">
+        <section class="game-single-area pt-120 pb-180 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -261,7 +278,7 @@
                                     <li>Finale | 3 days: 15 games | 5 games each day</li>
                                 </ul>
                             </div>
-                            <div class="upcoming-game-head w-100 text-center" style="display: none;">
+                            <div class="upcoming-game-head w-100 text-center">
                                 <div class="uc-game-head-title">
                                     <!-- <span>SEPTEMBER 22, 2020</span> -->
                                     <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
@@ -329,7 +346,7 @@
                                 in faucibus. Duis ultricies mi sed lorem blandit, non sodales sapien fermentum. Donec ultricies, turpis a sagittis suscipit</p>
                             <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
 
-                            <form id="form" method="POST">
+                            <form id="form" method="POST" style="display: none;">
                                 <div class="game-single-title mb-15">
                                     <h4>Team Details</h4>
                                 </div>
@@ -352,7 +369,7 @@
                                     </div> -->
                                     <div class="form-group col-md-6">
                                         <label>IGL/Manager Whatsapp Number</label>
-                                        <input required type="number" class="form-control" placeholder="1234567890" name="contact" >
+                                        <input required type="number" class="form-control" placeholder="1234567890" name="contact">
                                     </div>
                                     <!-- <div class="form-group col-md-6">
                                         <label>IGL/Manager Discord ID</label>
@@ -379,7 +396,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player1_contact" type="number" >
+                                        <input required class="form-control" placeholder="1234567890" name="player1_contact" type="number">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -410,7 +427,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player2_contact" type="number" >
+                                        <input required class="form-control" placeholder="1234567890" name="player2_contact" type="number">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -441,7 +458,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player3_contact" type="number" >
+                                        <input required class="form-control" placeholder="1234567890" name="player3_contact" type="number">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -472,7 +489,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player4_contact" type="number" >
+                                        <input required class="form-control" placeholder="1234567890" name="player4_contact" type="number">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -488,7 +505,7 @@
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="game-single-info">
                                     <h4 style="color: #413f3f;">Player 5</h4>
                                 </div>
@@ -504,7 +521,7 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>Contact</label>
-                                        <input required class="form-control" placeholder="1234567890" name="player5_contact" type="number" >
+                                        <input required class="form-control" placeholder="1234567890" name="player5_contact" type="number">
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label>In Game Name</label>
@@ -552,7 +569,7 @@
                                 </div>
 
                                 <div class="game-single-info">
-                                    <h4 style="color: #413f3f;">Substitute  2</h4>
+                                    <h4 style="color: #413f3f;">Substitute 2</h4>
                                 </div>
                                 <div class="form-row">
 

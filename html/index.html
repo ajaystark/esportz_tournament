@@ -26,221 +26,20 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/new.css">
 </head>
 <style>
-    body,
-    html {
-        height: 100%;
-    }
-    
-    .transparent-header {
-        top: 0px;
-    }
-    
-    @font-face {
-        font-family: bebasNeue;
-        src: url(fonts/BebasNeue-Book.ttf);
-    }
-    
     @font-face {
         font-family: gotham;
-        src: url(fonts/Gotham\ Bold.otf);
+        src: url('fonts/Gotham Bold.otf');
     }
     
     body {
         font-family: gotham !important;
     }
     
-    .esp-logo {
-        height: 120px
-    }
-    
-    @media only screen and (max-width: 720px) {
-        .esp-logo {
-            height: 80px;
-        }
-        .logo-div {
-            text-align: left !important;
-        }
-    }
-    
-    .video-wrap {
-        overflow: hidden;
-        width: 100%;
-        position: relative;
-    }
-    
-    .logo-div {
-        text-align: center;
-    }
-    
-    video {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    @media (min-width: 992px) {
-        #top-bar.transparent-topbar {
-            background: #282828 !important;
-        }
-    }
-    
-    @media (min-width: 992px) {
-        #top-bar.transparent-topbar {
-            z-index: 399;
-            border-bottom: 0;
-        }
-    }
-    
-    .dark #top-bar,
-    #top-bar.dark {
-        border-bottom-color: rgba(255, 255, 255, 0.1);
-        background-color: #282828;
-    }
-    
-    #top-bar {
-        position: relative;
-        border-bottom: 1px solid #EEE;
-        font-size: 13px;
-    }
-    
-    .dark {
-        color: #EEE;
-    }
-    
-    .dark .top-links {
-        border-bottom-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    @media (min-width: 768px) {
-        .top-links {
-            border-bottom: 0;
-        }
-    }
-    
-    .top-links {
-        position: relative;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-        border-bottom: 1px solid #EEE;
-    }
-    
-    .top-links-container {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-align: center;
-        align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        list-style: none;
-        margin-bottom: 0;
-    }
-    
-    .dark .top-links-item {
-        border-left-color: rgba(255, 255, 255, 0.1);
-    }
-    
-    .top-links-item:first-child,
-    .top-links-sub-menu .top-links-item {
-        border-left: 0 !important;
-    }
-    
-    .top-links-item {
-        position: relative;
-        border-left: 1px solid #EEE;
-    }
-    
-    .dark .top-links li>a,
-    .dark #top-social li a {
-        color: #FFF;
-    }
-    
-    .dark .top-links-item>a {
-        color: #AAA;
-    }
-    
-    .top-links-item>a {
-        display: block;
-        padding: 12px;
-        font-size: 0.75rem;
-        line-height: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #666;
-    }
-    
-    .stretched #wrapper {
-        width: 100%;
-        margin: 0;
-        box-shadow: none;
-    }
-    
-    #wrapper {
-        position: relative;
-        float: none;
-        width: 100%;
-        margin: 0 auto;
-        background-color: #FFF;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    #top-social {
-        display: -ms-flexbox;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    
     .navbar-wrap ul li a::before {
         background-color: #fa4454;
-    }
-    
-    .mean-container .mean-nav {
-        background: none;
-    }
-    
-    #top-social li .ts-icon {
-        width: 40px;
-        text-align: center;
-        font-size: 0.875rem;
-    }
-    
-    #top-social li .ts-icon,
-    #top-social li .ts-text {
-        display: block;
-        -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        height: 44px;
-        line-height: 44px;
-    }
-    
-    .vl {
-        border-left: 6px solid #e4a101;
-    }
-    
-    #count {
-        background-color: #e4a101;
-    }
-    
-    .yellow {
-        color: #e4a101;
-    }
-    
-    .main-bg {
-        /* background-image: url("img/slider/1.jpg"); */
-        height: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 100%;
     }
 </style>
 
@@ -442,9 +241,124 @@
             </div>
         </section>
         <!-- slider-area-end -->
+        <!-- <section>
+            <div class="my-3">
+                <div class="section-title text-center mb-20">
+                    <h2 class="black-text">Register For <span class="red-text">Tournament</span></h2>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="featured-game-area position-relative pt-5 mt-5 pb-3">
+            <div class="featured-game-bg"></div>
+            <div class="container">
+                <div class="row justify-content-around mb-5">
+                    <div class="section-title text-center mb-20">
+                        <h2 class="black-text" style="font-family: gotham !important;">REGISTER FOR <span class="red-text">TOURNAMENT</span></h2>
+                    </div>
+                    <div>
+                        <a href="rules.pdf" target="__blank__">
+                            <div class="p-2 px-5 rounded-button" style=" background-color:#fa4454">
+                                <h3 class="section-title mb-0" style="font-family: gotham !important;">RULE BOOK</h3>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="row featured-active">
+                    <div class="col-lg-4 col-sm-6 grid-item">
+                        <a href="free-fire.html">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/free-fire.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
+                                <h4><a href="free-fire.html">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Mobile</span>
+                                </div>
+                            </div> -->
+                                <!-- <div class="featured-game-content featured-game-overlay-content">
+                                <div class="featured-game-icon"><img src="img/icon/featured_game_icon.png" alt=""></div>
+                                <h4><a href="free-fire.html">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Mobile</span>
+                                </div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <div class="w-100 text-center px-5 pb-5">
+                            <div class="p-2 px-5 rounded-button" style=" background-color:rgb(255,185,0)">
+                                <h3 class="section-title mb-0" style="font-family: gotham !important;">MOBILE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 grid-item">
+                        <a href="fifa.html">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/fifa.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
+                                <h4><a href="fifa.html">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Console</span>
+                                </div>
+                            </div>
+                            <div class="featured-game-content featured-game-overlay-content">
+                                <div class="featured-game-icon"><img src="img/icon/featured_game_icon.png" alt=""></div>
+                                <h4><a href="fifa.html">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Console</span>
+                                </div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <div class="w-100 text-center px-5 pb-5">
+                            <div class="p-2 px-5 rounded-button" style=" background-color:rgb(229,27,239)">
+                                <h3 class="section-title mb-0" style="font-family: gotham !important;">CONSOLE</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 grid-item">
+                        <a href="valo.html">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/valo.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
+                                <h4><a href="#">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>PC</span>
+                                </div>
+                            </div>
+                            <div class="featured-game-content featured-game-overlay-content">
+                                <div class="featured-game-icon"><img src="img/icon/featured_game_icon.png" alt=""></div>
+                                <h4><a href="valo.html">JUST FOR <span>GAMERS</span></a></h4>
+                                <div class="featured-game-meta">
+                                    <i class="fas fa-bell"></i>
+                                    <span>PC</span>
+                                </div>
+                            </div> -->
+                            </div>
+                        </a>
+                        <div class="w-100 text-center px-5 pb-5">
+                            <div class="p-2 px-5 rounded-button" style=" background-color:#fa4454">
+                                <h3 class="section-title mb-0" style="font-family: gotham !important;">PC</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- new-games-area -->
-        <section class="released-games-area gray-bg pt-115 pb-70">
+        <section class="released-games-area gray-bg pt-115 pb-70 d-none">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
@@ -577,7 +491,7 @@
         <!-- new-games-area-end -->
 
         <!-- gamers-area -->
-        <section class="just-gamers-area just-gamers-bg pt-115 pb-120">
+        <section class="just-gamers-area just-gamers-bg pt-115 pb-120 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 col-md-10">
@@ -649,7 +563,7 @@
         <!-- gamers-area-end -->
 
         <!-- featured-game-area -->
-        <section class="featured-game-area position-relative pt-115 pb-90">
+        <section class="featured-game-area position-relative pt-115 pb-90 d-none">
             <div class="featured-game-bg"></div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -662,33 +576,36 @@
                 </div>
                 <div class="row featured-active">
                     <div class="col-lg-4 col-sm-6 grid-item">
-                        <div class="featured-game-item mb-30">
-                            <div class="featured-game-thumb">
-                                <img src="img/featured/free-fire.jpg" alt="">
-                            </div>
-                            <div class="featured-game-content">
+                        <a href="">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/free-fire.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
                                 <h4><a href="free-fire.html">JUST FOR <span>GAMERS</span></a></h4>
                                 <div class="featured-game-meta">
                                     <i class="fas fa-bell"></i>
                                     <span>Mobile</span>
                                 </div>
-                            </div>
-                            <div class="featured-game-content featured-game-overlay-content">
+                            </div> -->
+                                <!-- <div class="featured-game-content featured-game-overlay-content">
                                 <div class="featured-game-icon"><img src="img/icon/featured_game_icon.png" alt=""></div>
                                 <h4><a href="free-fire.html">JUST FOR <span>GAMERS</span></a></h4>
                                 <div class="featured-game-meta">
                                     <i class="fas fa-bell"></i>
                                     <span>Mobile</span>
                                 </div>
+                            </div> -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 grid-item">
-                        <div class="featured-game-item mb-30">
-                            <div class="featured-game-thumb">
-                                <img src="img/featured/fifa.jpg" alt="">
-                            </div>
-                            <div class="featured-game-content">
+                        <a href="">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/fifa.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
                                 <h4><a href="fifa.html">JUST FOR <span>GAMERS</span></a></h4>
                                 <div class="featured-game-meta">
                                     <i class="fas fa-bell"></i>
@@ -702,15 +619,17 @@
                                     <i class="fas fa-bell"></i>
                                     <span>Console</span>
                                 </div>
+                            </div> -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-sm-6 grid-item">
-                        <div class="featured-game-item mb-30">
-                            <div class="featured-game-thumb">
-                                <img src="img/featured/valo.jpg" alt="">
-                            </div>
-                            <div class="featured-game-content">
+                        <a href="">
+                            <div class="featured-game-item mb-30">
+                                <div class="featured-game-thumb">
+                                    <img src="img/featured/valo.jpg" alt="">
+                                </div>
+                                <!-- <div class="featured-game-content">
                                 <h4><a href="#">JUST FOR <span>GAMERS</span></a></h4>
                                 <div class="featured-game-meta">
                                     <i class="fas fa-bell"></i>
@@ -724,8 +643,9 @@
                                     <i class="fas fa-bell"></i>
                                     <span>PC</span>
                                 </div>
+                            </div> -->
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
