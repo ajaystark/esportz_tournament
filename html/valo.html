@@ -160,6 +160,18 @@
             transform: rotate(359deg);
         }
     }
+    
+    .btn.btn-style-two::after {
+        background-color: #fa4454 !important;
+    }
+    
+    .btn.btn-style-two::before {
+        background-color: #fa4454 !important;
+    }
+    
+    #scrollUp {
+        background: #fa4454;
+    }
 </style>
 
 <body>
@@ -177,7 +189,7 @@
         <div class="spinner"></div>
     </div>
     <!-- preloader-end -->
-    <header>
+    <header class='d-none'>
         <div id="sticky-header" class="transparent-header">
             <div class="container-fluid s-container-full-padding">
                 <div class="row">
@@ -211,9 +223,9 @@
 
     <!-- main-area -->
     <main>
-        <div class="d-md-none d-block my-5">
+        <!-- <div class="d-md-none d-block my-5">
             <br><br>
-        </div>
+        </div> -->
         <section class="w-100">
             <img id='image' src="img/backgrounds/valoOpen.png" class="main-bg" alt="">
         </section>
@@ -369,7 +381,7 @@
                             <div class="game-single-shape"><img src="img/images/game_section_shape.png" alt=""></div> -->
 
                             <form id="form" method="POST">
-                                <div class="game-single-title mb-15">
+                                <div class="game-single-title mb-5">
                                     <h4>Team Details</h4>
                                 </div>
                                 <div class="form-row">
@@ -399,11 +411,11 @@
                                     </div> -->
                                 </div>
                                 <br>
-                                <div class="game-single-title mb-15">
+                                <div class="game-single-title mb-5">
                                     <h4>Player Details</h4>
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Player 1</h4>
                                 </div>
                                 <div class="form-row">
@@ -434,7 +446,7 @@
                                     </div>
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Player 2</h4>
                                 </div>
                                 <div class="form-row">
@@ -465,7 +477,7 @@
                                     </div>
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Player 3</h4>
                                 </div>
                                 <div class="form-row">
@@ -496,7 +508,7 @@
                                     </div>
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Player 4</h4>
                                 </div>
                                 <div class="form-row">
@@ -528,7 +540,7 @@
                                 </div>
 
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Player 5</h4>
                                 </div>
                                 <div class="form-row">
@@ -559,7 +571,7 @@
                                     </div>
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Substitute 1</h4>
                                 </div>
                                 <div class="form-row">
@@ -590,7 +602,7 @@
                                     </div> -->
                                 </div>
 
-                                <div class="game-single-info">
+                                <div class="game-single-info my-3">
                                     <h4 style="color: #413f3f;">Substitute 2</h4>
                                 </div>
                                 <div class="form-row">
@@ -643,6 +655,19 @@
                 </div>
             </div>
         </section>
+
+        <div class="w-100 text-center mb-5 pb-5">
+            <div class="row text-center">
+
+                <div class="mx-auto">
+                    <a href="index.html">
+                        <div class="p-2 px-5 rounded-button" style=" background-color:#fa4454;color:black;">
+                            <h3 class="section-title mb-0" style="font-family: gotham !important;">Back To Main Page</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <!-- game-single-area-end -->
         <section class="container">
 
