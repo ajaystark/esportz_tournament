@@ -481,7 +481,7 @@ def valo_submit(request):
         print(now)
         # print(player1_name)
         if success==True:
-            obj=valorant(email=email,teamName=teamName,logo=logo,contact=contact,
+            obj=valorant3(email=email,teamName=teamName,logo=logo,contact=contact,
             player1_name=player1_name,player1_email=player1_email,player1_contact=player1_contact,player1_IGN=player1_IGN,player1_discord=player1_discord,
             player2_name=player2_name,player2_email=player2_email,player2_contact=player2_contact,player2_IGN=player2_IGN,player2_discord=player2_discord,
             player3_name=player3_name,player3_email=player3_email,player3_contact=player3_contact,player3_IGN=player3_IGN,player3_discord=player3_discord,
@@ -498,7 +498,7 @@ def valo_submit(request):
 
             send_mail(
                 'Esportz Premier Series Valorant Qualifier Registration confirmation',
-                '''Thank you for registering your team for the First Valorant Qualifier of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the first qualifier we are accepting only 256 teams on a first come first serve basis. If you have not been shortlisted, please be assured that you will be given the first priority if you register for our 2nd qualifier which will be announced shortly. 
+                '''Thank you for registering your team for the Second Valorant Qualifier of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the Second qualifier we are accepting a limited number of   teams on a first come first serve basis. If you have not been shortlisted, please be assured that you will be given the first priority if you register for our 3rd qualifier which will be announced shortly. 
                 \nYour unique registration id is: {}
                 \nThis mail is auto-generated. For any queries, please get in touch with us on discord, facebook or Instagram.
                 \nMake sure to follow us on insta, facebook discord and youtube for regular updates.
@@ -525,7 +525,7 @@ def valo_submit(request):
 @csrf_exempt
 def valo_excel(request):
     try:
-        regs=valorant.objects.all()
+        regs=valorant3.objects.all()
         
         email=[]
         teamName=[]
