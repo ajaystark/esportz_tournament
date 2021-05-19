@@ -27,8 +27,13 @@
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/icons.css" type="text/css" />
     <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
+    .mySlides {
+        display: none;
+    }
+    
     @font-face {
         font-family: gotham;
         src: url('fonts/Gotham Bold.otf');
@@ -56,6 +61,20 @@
     
     .header-top-mail p a {
         color: white;
+    }
+    
+    .w3-button {
+        color: black!important;
+        background-color: #fa4454 !important;
+    }
+    
+    .w3-button:hover {
+        color: white!important;
+        background-color: transparent !important;
+    }
+    
+    .header-social ul li a:hover {
+        color: #fa4454;
     }
 </style>
 
@@ -170,9 +189,20 @@
     <!-- header-area-end -->
 
     <!-- main-area -->
-    <section class="w-100">
+    <section class="w-100 d-md-none d-block">
         <img id='image' src="img/slider/3.jpg" class="main-bg" alt="">
     </section>
+
+    <div class="d-md-block d-none">
+        <img class="mySlides" src="img/slider/valo2.jpg" style="width:100%">
+        <img class="mySlides" src="img/slider/1.jpg" style="width:100%">
+        <img class="mySlides" src="img/slider/2.jpg" style="width:100%">
+
+        <button class="w3-button w3-display-left m-3 d-md-block d-none" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right m-3 d-md-block d-none" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
     <main>
 
         <section class="main-bg d-none">
@@ -265,7 +295,7 @@
             </div>
         </section> -->
 
-        <section class="featured-game-area position-relative pt-5 mt-5 pb-3">
+        <section class="featured-game-area position-relative pt-md-5 mt-md-5 pb-3">
             <div class="featured-game-bg"></div>
             <div class="container">
                 <div class="row justify-content-around mb-5">
@@ -275,7 +305,7 @@
                     <div>
                         <a href="rules.pdf" target="__blank__">
                             <div class="p-2 px-5 rounded-button" style=" background-color:#fa4454">
-                                <h3 class="section-title mb-0" style="font-family: gotham !important;">RULE BOOK</h3>
+                                <h3 class="section-title my-0" style="font-family: gotham !important;">RULE BOOK</h3>
                             </div>
                         </a>
 
@@ -284,7 +314,7 @@
                     <div>
                         <a href="faq.html">
                             <div class="p-2 px-3 rounded-button" style=" background-color:#fa4454">
-                                <h3 class="section-title mb-0" style="font-family: gotham !important;">?</h3>
+                                <h3 class="section-title my-0" style="font-family: gotham !important;">?</h3>
                             </div>
                         </a>
 
@@ -316,7 +346,7 @@
                         </a>
                         <div class="w-100 text-center px-5 pb-5">
                             <div class="p-2 px-md-5 px-3 rounded-button" style=" background-color:rgb(255,185,0)">
-                                <h3 class="section-title mb-0" style="font-family: gotham !important;">MOBILE</h3>
+                                <h3 class="section-title my-0" style="font-family: gotham !important;">MOBILE</h3>
                             </div>
                         </div>
                     </div>
@@ -345,7 +375,7 @@
                         </a>
                         <div class="w-100 text-center px-5 pb-5">
                             <div class="p-2 px-md-5 px-3 rounded-button" style=" background-color:rgb(229,27,239)">
-                                <h3 class="section-title mb-0" style="font-family: gotham !important;">CONSOLE</h3>
+                                <h3 class="section-title my-0" style="font-family: gotham !important;">CONSOLE</h3>
                             </div>
                         </div>
                     </div>
@@ -374,7 +404,7 @@
                         </a>
                         <div class="w-100 text-center px-5 pb-5">
                             <div class="p-2 px-md-5 px-3 rounded-button" style=" background-color:#fa4454">
-                                <h3 class="section-title mb-0" style="font-family: gotham !important;">PC</h3>
+                                <h3 class="section-title my-0" style="font-family: gotham !important;">PC</h3>
                             </div>
                         </div>
                     </div>
@@ -709,6 +739,10 @@
 							<source src='videos/trailer.mp4' type='video/mp4' />
 						</video>
             </div>
+        </section>
+
+        <section class="w-100">
+            <img src="img/backgrounds/calendar.png" class="main-bg" alt="">
         </section>
         <!-- cta-area-end -->
 
@@ -1190,6 +1224,31 @@
             $('#image').attr('src', src);
         }, 5000);
     });
+</script>
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
 </script>
 
 </html>
