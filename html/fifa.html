@@ -160,6 +160,18 @@
             transform: rotate(359deg);
         }
     }
+    
+    .btn.btn-style-two::after {
+        background-color: rgb(229, 27, 239) !important;
+    }
+    
+    .btn.btn-style-two::before {
+        background-color: rgb(229, 27, 239) !important;
+    }
+    
+    #scrollUp {
+        background: rgb(229, 27, 239);
+    }
 </style>
 
 <body>
@@ -214,7 +226,7 @@
         <section class="w-100">
             <img id='image' src="img/backgrounds/fifaClosed.png" class="main-bg" alt="">
         </section>
-        <section>
+        <section class="">
             <div class="upcoming-game-head w-100 text-center my-5 mx-0">
                 <div class="uc-game-head-title text-center w-100 mx-0">
                     <!-- <span>SEPTEMBER 22, 2020</span> -->
@@ -279,18 +291,18 @@
         <!-- breadcrumb-area-end -->
 
         <!-- game-single-area -->
-        <section class="game-single-area pt-120 pb-180 d-none">
+        <section class="game-single-area py-3 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="game-single-content game-overview-content">
-                            <div class="upcoming-game-head">
+                            <div class="upcoming-game-head d-none">
                                 <div class="uc-game-head-title">
                                     <!-- <span>SEPTEMBER 22, 2020</span> -->
                                     <h4>FORMAT</h4>
                                 </div>
                             </div>
-                            <div class="game-single-info mb-45">
+                            <div class="game-single-info mb-45 d-none">
 
                                 <ul>
                                     <li>256 Players </li>
@@ -299,13 +311,13 @@
                                     <li>MUST HAVE A FIFA 2021 ACCOUNT</li>
                                 </ul>
                             </div>
-                            <div class="upcoming-game-head w-100 text-center">
+                            <div class="upcoming-game-head w-100 text-center d-none">
                                 <div class="uc-game-head-title">
                                     <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
                                 </div>
                             </div>
 
-                            <form id="form" method="POST" class="d-none">
+                            <form id="form" method="POST" class="">
                                 <div class="game-single-title mb-15">
                                     <h4>Team Details</h4>
                                 </div>
@@ -355,7 +367,7 @@
                                     </div>
                                 </div>
                                 <br>
-                                <button id="register" type="submit" class="btn btn-style-two">Register</button>
+                                <button id="register" type="submit" class="btn btn-style-two" style="color: white;">Register</button>
 
                             </form>
                             <div class="success-message">
@@ -371,7 +383,7 @@
             </div>
         </section>
 
-        <div class="w-100 text-center mb-5 pb-5">
+        <div class="w-100 text-center my-5 py-5">
             <div class="row text-center">
 
                 <div class="mx-auto">
@@ -690,7 +702,7 @@
                 formData.append('g-recaptcha-response', token)
                 $.ajax({
                     url: 'https://esportz-regs.herokuapp.com/fifa_submit',
-                    // url: 'http://127.0.0.1:8000/fifa_submit',
+                    // url: 'http://192.168.0.101:8000/fifa_submit',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
