@@ -5,12 +5,12 @@ from django.forms import ModelForm, Textarea
 from datetime import datetime
 
 def get_upload_path(instance,filename):
-    name='images/{0}/{1}'.format(instance.teamName, filename)
+    name='images/ffwildcard/{0}/{1}'.format(instance.teamName, filename)
     print(name)
     return name
     
 def get_upload_path_player(instance,filename):
-    name='images/fifa2/{0}/{1}'.format(instance.name, filename)
+    name='images/fifawilcard/{0}/{1}'.format(instance.name, filename)
     return name
 
 
@@ -143,6 +143,128 @@ class FreeFireAdmin3(admin.ModelAdmin):
 
 
 
+class FreeFire4(models.Model):
+    email= models.CharField(max_length=50)
+    teamName= models.CharField(max_length=50)
+    logo = models.ImageField(upload_to=get_upload_path, blank=True)
+    manager= models.CharField(max_length=50)
+    contact= models.CharField(max_length=50)
+    discord= models.CharField(max_length=50)
+
+    player1_name= models.CharField(max_length=50, blank=True)
+    player1_email= models.CharField(max_length=50, blank=True)
+    player1_contact= models.CharField(max_length=50, blank=True)
+    player1_IGN= models.CharField(max_length=50, blank=True)
+    player1_UID= models.CharField(max_length=50, blank=True)
+    player1_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+
+    
+    player2_name= models.CharField(max_length=50, blank=True)
+    player2_email= models.CharField(max_length=50, blank=True)
+    player2_contact= models.CharField(max_length=50, blank=True)
+    player2_IGN= models.CharField(max_length=50, blank=True)
+    player2_UID= models.CharField(max_length=50, blank=True)
+    player2_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player3_name= models.CharField(max_length=50, blank=True)
+    player3_email= models.CharField(max_length=50, blank=True)
+    player3_contact= models.CharField(max_length=50, blank=True)
+    player3_IGN= models.CharField(max_length=50, blank=True)
+    player3_UID= models.CharField(max_length=50, blank=True)
+    player3_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player4_name= models.CharField(max_length=50, blank=True)
+    player4_email= models.CharField(max_length=50, blank=True)
+    player4_contact= models.CharField(max_length=50, blank=True)
+    player4_IGN= models.CharField(max_length=50, blank=True)
+    player4_UID= models.CharField(max_length=50, blank=True)
+    player4_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player5_name= models.CharField(max_length=50, blank=True)
+    player5_email= models.CharField(max_length=50, blank=True)
+    player5_contact= models.CharField(max_length=50, blank=True)
+    player5_IGN= models.CharField(max_length=50, blank=True)
+    player5_UID= models.CharField(max_length=50, blank=True)
+    player5_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player6_name= models.CharField(max_length=50, blank=True)
+    player6_email= models.CharField(max_length=50, blank=True)
+    player6_contact= models.CharField(max_length=50, blank=True)
+    player6_IGN= models.CharField(max_length=50, blank=True)
+    player6_UID= models.CharField(max_length=50, blank=True)
+    player6_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    uniqueId= models.CharField(max_length=50, blank=True)
+
+    # time = models.DateTimeField(default=datetime.now, blank=True) 
+
+    class Meta:  
+        verbose_name = 'Free Fire 4 Reg'
+        
+class FreeFireAdmin4(admin.ModelAdmin):
+    list_display = ('email', 'teamName', 'contact', 'discord','logo','uniqueId')
+        
+class FreeFireWilcard(models.Model):
+    email= models.CharField(max_length=50)
+    teamName= models.CharField(max_length=50)
+    logo = models.ImageField(upload_to=get_upload_path, blank=True)
+    manager= models.CharField(max_length=50)
+    contact= models.CharField(max_length=50)
+    discord= models.CharField(max_length=50)
+
+    player1_name= models.CharField(max_length=50, blank=True)
+    player1_email= models.CharField(max_length=50, blank=True)
+    player1_contact= models.CharField(max_length=50, blank=True)
+    player1_IGN= models.CharField(max_length=50, blank=True)
+    player1_UID= models.CharField(max_length=50, blank=True)
+    player1_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+
+    
+    player2_name= models.CharField(max_length=50, blank=True)
+    player2_email= models.CharField(max_length=50, blank=True)
+    player2_contact= models.CharField(max_length=50, blank=True)
+    player2_IGN= models.CharField(max_length=50, blank=True)
+    player2_UID= models.CharField(max_length=50, blank=True)
+    player2_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player3_name= models.CharField(max_length=50, blank=True)
+    player3_email= models.CharField(max_length=50, blank=True)
+    player3_contact= models.CharField(max_length=50, blank=True)
+    player3_IGN= models.CharField(max_length=50, blank=True)
+    player3_UID= models.CharField(max_length=50, blank=True)
+    player3_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player4_name= models.CharField(max_length=50, blank=True)
+    player4_email= models.CharField(max_length=50, blank=True)
+    player4_contact= models.CharField(max_length=50, blank=True)
+    player4_IGN= models.CharField(max_length=50, blank=True)
+    player4_UID= models.CharField(max_length=50, blank=True)
+    player4_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player5_name= models.CharField(max_length=50, blank=True)
+    player5_email= models.CharField(max_length=50, blank=True)
+    player5_contact= models.CharField(max_length=50, blank=True)
+    player5_IGN= models.CharField(max_length=50, blank=True)
+    player5_UID= models.CharField(max_length=50, blank=True)
+    player5_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    
+    player6_name= models.CharField(max_length=50, blank=True)
+    player6_email= models.CharField(max_length=50, blank=True)
+    player6_contact= models.CharField(max_length=50, blank=True)
+    player6_IGN= models.CharField(max_length=50, blank=True)
+    player6_UID= models.CharField(max_length=50, blank=True)
+    player6_photo = models.ImageField(upload_to=get_upload_path, blank=True)
+    uniqueId= models.CharField(max_length=50, blank=True)
+
+    # time = models.DateTimeField(default=datetime.now, blank=True) 
+
+    class Meta:  
+        verbose_name = 'Free Fire Wilcard'
+
+class FreeFireAdminWilcard(admin.ModelAdmin):
+    list_display = ('email', 'teamName', 'contact', 'discord','logo','uniqueId')
+
+
+
 class FreeFire2(models.Model):
     email= models.CharField(max_length=50)
     teamName= models.CharField(max_length=50)
@@ -238,6 +360,25 @@ class Fifa2(models.Model):
     class Meta:  
         verbose_name = 'Fifa 2 Reg'
 class FifaAdmin2(admin.ModelAdmin):
+    list_display = ('email', 'name', 'contact', 'discord','photo','uniqueId')
+    
+    
+class FifaWildcard(models.Model):
+    email= models.CharField(max_length=50)
+    name= models.CharField(max_length=50)
+    photo = models.ImageField(upload_to=get_upload_path_player, blank=True)
+    contact= models.CharField(max_length=50)
+    discord= models.CharField(max_length=50)
+    psn= models.CharField(max_length=50)
+    ea= models.CharField(max_length=50)
+    age= models.IntegerField(blank=True)
+    ign= models.CharField(max_length=50)
+    webcam= models.CharField(max_length=50)
+    uniqueId= models.CharField(max_length=50, blank=True)
+
+    class Meta:  
+        verbose_name = 'Fifa Wildcard'
+class FifaAdminWildcard(admin.ModelAdmin):
     list_display = ('email', 'name', 'contact', 'discord','photo','uniqueId')
 
 
@@ -475,9 +616,12 @@ class valorantAdmin4(admin.ModelAdmin):
 admin.site.register(FreeFire, FreeFireAdmin)
 admin.site.register(FreeFire2, FreeFireAdmin2)
 admin.site.register(FreeFire3, FreeFireAdmin3)
+admin.site.register(FreeFire4, FreeFireAdmin4)
+admin.site.register(FreeFireWilcard, FreeFireAdminWilcard)
 admin.site.register(valorant, valorantAdmin)
 admin.site.register(valorant2, valorantAdmin2)
 admin.site.register(valorant3, valorantAdmin3)
 admin.site.register(valorant4, valorantAdmin4)
 admin.site.register(Fifa, FifaAdmin)
 admin.site.register(Fifa2, FifaAdmin2)
+admin.site.register(FifaWildcard, FifaAdminWildcard)
