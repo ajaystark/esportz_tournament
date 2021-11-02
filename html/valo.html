@@ -1009,8 +1009,8 @@
                 var formData = new FormData($('#form')[0]);
                 formData.append('g-recaptcha-response', token)
                 $.ajax({
-                    url: 'https://esportz-regs.herokuapp.com/valo_submit',
-                    // url: 'http://127.0.0.1:8000/valo_submit',
+                    // url: 'https://esportz-regs.herokuapp.com/valo_submit',
+                    url: 'http://127.0.0.1:8000/valo_submit',
                     type: 'post',
                     dataType: 'json',
                     data: formData,
