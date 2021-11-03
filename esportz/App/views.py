@@ -95,7 +95,7 @@ def submit(request):
         print(now)
         # print(player1_name)
         if success==True:
-            obj=FreeFire4(email=email,teamName=teamName,logo=logo,manager=manager,contact=contact,discord=discord,
+            obj=FreeFireWilcard(email=email,teamName=teamName,logo=logo,manager=manager,contact=contact,discord=discord,
             player1_name=player1_name,player1_email=player1_email,player1_contact=player1_contact,player1_IGN=player1_IGN,player1_UID=player1_UID,player1_photo=player1_photo,
             player2_name=player2_name,player2_email=player2_email,player2_contact=player2_contact,player2_IGN=player2_IGN,player2_UID=player2_UID,player2_photo=player2_photo,
             player3_name=player3_name,player3_email=player3_email,player3_contact=player3_contact,player3_IGN=player3_IGN,player3_UID=player3_UID,player3_photo=player3_photo,
@@ -111,8 +111,8 @@ def submit(request):
 
             send_mail(
                 
-                'Esportz Premier Series Free Fire Qualifier 4 Registration confirmation',
-                '''Thank you for registering your team for the Forth Free Fire qualifier of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the Forth qualifier we are accepting only 150 teams on a first come first serve basis.
+                'Esportz Premier Series Free Fire Wild Card Registration confirmation',
+                '''Thank you for registering your team for the wildcard event of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the wild card event we are accepting only a limited number of teams on a first come first serve basis. 
                 \nYour unique registration id is: {}
                 \nThis mail is auto-generated. For any queries, please get in touch with us on discord, facebook or Instagram.
                 \nMake sure to follow us on insta, facebook discord and youtube for regular updates.
@@ -137,7 +137,7 @@ def submit(request):
 @csrf_exempt
 def excel(request):
     try:
-        regs=FreeFire4.objects.all()
+        regs=FreeFireWilcard.objects.all()
         
         email=[]
         teamName=[]
@@ -299,7 +299,7 @@ def fifa_submit(request):
         now = datetime.now()
         print(now)
         if success==True:
-            obj=Fifa2(email=email,name=name,photo=photo,psn=psn,contact=contact,discord=discord,ea=ea,age=age,ign=ign,webcam=webcam)
+            obj=FifaWildcard(email=email,name=name,photo=photo,psn=psn,contact=contact,discord=discord,ea=ea,age=age,ign=ign,webcam=webcam)
             obj.save()
             n = str(int(random.random()*10000))+str(obj.id)
             obj.uniqueId=n
@@ -307,8 +307,8 @@ def fifa_submit(request):
             obj.save()
 
             send_mail(
-                'Esportz Premier Series Fifa Qualifier 2 Registration confirmation',
-                '''Thank you for registering your team for the Second Fifa qualifier of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the first qualifier we are accepting only 256 players on a first come first serve basis. If you have not been shortlisted, please be assured that you will be given the first priority if you register for our 3nd qualifier in September. 
+                'Esportz Premier Series Fifa Wild Card Registration confirmation',
+                '''Thank you for registering your team for the wildcard event of Esportz Premier Series! This mail is an official confirmation that we have recorded your entry. We will get in touch with you via phone or mail once your matches are scheduled. Please note that for the wild card event we are accepting only a limited number of teams on a first come first serve basis. 
                 \nYour unique registration id is: {}
                 \nThis mail is auto-generated. For any queries, please get in touch with us on discord, facebook or Instagram.
                 \nMake sure to follow us on insta, facebook discord and youtube for regular updates.
@@ -333,7 +333,7 @@ def fifa_submit(request):
 @csrf_exempt
 def fifa_excel(request):
     try:
-        regs=Fifa2.objects.all()
+        regs=FifaWildcard.objects.all()
         
         email=[]
         name=[]
@@ -377,7 +377,7 @@ def fifa_excel(request):
 @csrf_exempt
 def email(request):
     try:
-        all_regs= FreeFire4.objects.all()
+        all_regs= FreeFireWilcard.objects.all()
         for reg in all_regs:
             print(reg.uniqueId)
             if reg.uniqueId=='':
