@@ -1,0 +1,745 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Esportz Premier Series</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/odometer.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM"></script>
+
+    <link rel="stylesheet" href="css/icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/new.css">
+</head>
+
+<style>
+    .transparent-header {
+        top: 0px;
+    }
+    
+    .navbar-wrap ul li a::before {
+        background-color: rgb(229, 27, 239);
+    }
+    
+    .success-message {
+        text-align: center;
+        max-width: 500px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .success-message__icon {
+        max-width: 75px;
+    }
+    
+    .success-message__title {
+        color: #3DC480;
+        transform: translateY(25px);
+        opacity: 0;
+        transition: all 200ms ease;
+    }
+    
+    .active .success-message__title {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .success-message__content {
+        color: #B8BABB;
+        transform: translateY(25px);
+        opacity: 0;
+        transition: all 200ms ease;
+        transition-delay: 50ms;
+    }
+    
+    .active .success-message__content {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .icon-checkmark circle {
+        fill: #3DC480;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: transform 200ms cubic-bezier(0.22, 0.96, 0.38, 0.98);
+    }
+    
+    .icon-checkmark path {
+        transition: stroke-dashoffset 350ms ease;
+        transition-delay: 100ms;
+    }
+    
+    .active .icon-checkmark circle {
+        transform: scale(1);
+    }
+    
+    @font-face {
+        font-family: bebasNeue;
+        src: url(fonts/BebasNeue-Book.ttf);
+    }
+    
+    @font-face {
+        font-family: gotham;
+        src: url(fonts/Gotham\ Bold.otf);
+    }
+    
+    body {
+        font-family: gotham !important;
+    }
+    
+    .spinner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 60px;
+        width: 60px;
+        margin: 0px auto;
+        -webkit-animation: rotation .6s infinite linear;
+        -moz-animation: rotation .6s infinite linear;
+        -o-animation: rotation .6s infinite linear;
+        animation: rotation .6s infinite linear;
+        border-left: 6px solid rgba(0, 174, 239, .15);
+        border-right: 6px solid rgba(0, 174, 239, .15);
+        border-bottom: 6px solid rgba(0, 174, 239, .15);
+        border-top: 6px solid rgba(0, 174, 239, .8);
+        border-radius: 100%;
+    }
+    
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+    }
+    
+    @-moz-keyframes rotation {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            -moz-transform: rotate(359deg);
+        }
+    }
+    
+    @-o-keyframes rotation {
+        from {
+            -o-transform: rotate(0deg);
+        }
+        to {
+            -o-transform: rotate(359deg);
+        }
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+    
+    .btn.btn-style-two::after {
+        background-color: rgb(229, 27, 239) !important;
+    }
+    
+    .btn.btn-style-two::before {
+        background-color: rgb(229, 27, 239) !important;
+    }
+    
+    #scrollUp {
+        background: rgb(229, 27, 239);
+    }
+</style>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <img src="img/icon/preloader.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id='loading' class="" style="position: fixed; width: 100%; height: 100%; position: fixed; background-color: black; opacity: 0.5; z-index: 99; display: none;">
+        <div class="spinner"></div>
+    </div>
+    <!-- preloader-end -->
+    <header class='d-none'>
+        <div id="sticky-header" class="transparent-header">
+            <div class="container-fluid s-container-full-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-menu menu-style-two">
+                            <nav>
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/logo/epslogo2.png" height="80px" alt="Logo"></a>
+                                </div>
+                                <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
+                                    <ul>
+                                        <li><a href="index.html">Home</a>
+                                        </li>
+                                        <li><a href="free-fire.html" style="color: white;">Free Fire</a>
+                                        </li>
+                                        <li class="show"><a href="fifa.html">Fifa</a>
+                                        </li>
+                                        <li><a href="valo.html" style="color: white;">Valorant</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main-area -->
+    <main>
+
+        <section class="w-100 container">
+            <img id='image' src="img/backgrounds/Reg for FIFA 22.png" class="main-bg" alt="">
+            <a href="https://www.youtube.com/channel/UCHYq5NdnrfYgoA5vBivViAw" target="_blank">
+                <img id='image' src="img/backgrounds/YT For FIFA 22.png" class="main-bg" alt=""></a>
+        </section>
+        <section>
+            <div class="upcoming-game-head w-100 text-center my-5 mx-0 d-none">
+                <div class="uc-game-head-title text-center w-100 mx-0">
+                    <!-- <span>SEPTEMBER 22, 2020</span> -->
+                    <h3 style="color: black;">BUT DONT WORRY YOU CAN REGISTER FOR NEXT TOURNAMENT</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container my-5 px-5 d-none">
+            <div class="row justify-content-center">
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">256 Players</h5>
+                </div>
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">Every Participant must be able to stream his perspective</h5>
+                </div>
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;"> Every participant should have PS4</h5>
+                </div>
+
+                <div class="p-2 px-5 mx-3 my-3 rounded-button" style=" background-color:rgb(123,123,123)">
+                    <h5 class="section-title mb-0" style="font-family: gotham !important;">Must have a FIFA 2021 account</h5>
+                </div>
+
+            </div>
+        </div>
+        <!-- breadcrumb-area -->
+        <div class="breadcrumb-area breadcrumb-bg game-overview-breadcrumb d-none" style="background-image: url(img/images/fifa.jpeg);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="game-overview-img slider-content">
+                            <!-- <img src="img/logo/free-fire-logo.png" alt="" style="width:100% !important"> -->
+                            <h2>Fifa</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-6">
+                        <div class="breadcrumb-content text-center text-lg-left pl-80">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html" style="color: black;">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page" style="color: white;">Fifa</li>
+                                </ol>
+                            </nav>
+                            <!-- <h2>Free <span style="color: black;">Fire</span></h2> -->
+                            <div class="game-overview-status">
+                                <ul style="color: white;">
+                                    <li style="color: white;"><span style="color: black;">Total Players :</span> 256</li>
+                                    <li><span style="color: black;">Date :</span>14th February 2021 - 1st March 2021</li>
+                                    <li><span style="color: black;">Category :</span>Console</li>
+                                </ul>
+                            </div>
+                            <a href="#form" class="btn btn-style-two">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb-area-end -->
+
+        <!-- game-single-area -->
+        <section class="game-single-area pt-120 pb-180">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="game-single-content game-overview-content">
+                            <div class="upcoming-game-head d-none">
+                                <div class="uc-game-head-title">
+                                    <!-- <span>SEPTEMBER 22, 2020</span> -->
+                                    <h4>FORMAT</h4>
+                                </div>
+                            </div>
+                            <div class="game-single-info mb-45 d-none">
+
+                                <ul>
+                                    <li>256 Players </li>
+                                    <li>EVERY PARTICIPANT MUST BE ABLE TO STREAM HIS PERSPECTIVE</li>
+                                    <li>EVERY PARTICIPANT SHOULD HAVE PS4</li>
+                                    <li>MUST HAVE A FIFA 2021 ACCOUNT</li>
+                                </ul>
+                            </div>
+                            <div class="upcoming-game-head w-100 text-center d-none">
+                                <div class="uc-game-head-title">
+                                    <h4 style="color: red;">REGISTRATIONS CLOSED</h4>
+                                </div>
+                            </div>
+
+                            <form id="form" method="POST" class="">
+                                <div class="game-single-title mb-15">
+                                    <h4>Team Details</h4>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Email</label>
+                                        <input required type="email" class="form-control" placeholder="Email" name="email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label> Name</label>
+                                        <input required type="text" class="form-control" placeholder="Name" name="name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>In Game Name (IGN)</label>
+                                        <input required type="text" class="form-control" placeholder="IGN" name="ign">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Discord ID</label>
+                                        <input required type="text" class="form-control" placeholder="Username #0000" name="discord">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Age</label>
+                                        <input required type="number" class="form-control" name="age" placeholder="0" maxlength="3">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Contact</label>
+                                        <input required type="number" class="form-control" placeholder="1234567890" name="contact" maxlength="10">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>EA ID</label>
+                                        <input required type="text" class="form-control" placeholder="EA" name="ea">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>PSN ID</label>
+                                        <input required type="text" class="form-control" placeholder="PSN" name="psn">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Player Photo</label>
+                                        <input type="file" accept="images/*" class="form-control" placeholder="Player Photo" name="photo">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label>Do you have webcam</label>
+                                        <input required type="text" class="form-control" placeholder="Yes" name="webcam">
+                                    </div>
+                                </div>
+                                <br>
+                                <button id="register" type="submit" class="btn btn-style-two" style="color: white;">Register</button>
+
+                            </form>
+                            <div class="success-message">
+                                <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+                                    <circle cx="38" cy="38" r="36"/>
+                                    <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.7,40.9l10.9,10.9l28.7-28.7"/>
+                                </svg>
+                                <h1 class="success-message__title">Registered Successfully</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-100 text-center my-5 py-5">
+            <div class="row text-center">
+
+                <div class="mx-auto">
+                    <a href="index.html">
+                        <div class="p-2 px-5 rounded-button" style=" background-color:rgb(229, 27, 239);color:black;">
+                            <h3 class="section-title mb-0" style="font-family: gotham !important;">Back To Main Page</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- game-single-area-end -->
+        <section class="container">
+
+        </section>
+    </main>
+    <!-- main-area-end -->
+    <footer id="footer" style="font-family: ' Montserrat ', Helvetica, sans-serif; font-weight: normal !important; font-style: normal;line-height: 24px;">
+        <div class="container">
+            <div class="row footer-widgets">
+
+                <!-- footer widget about-->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="footer-widget f-widget-about">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <p class="footer-logo">
+                                    <img src="https://esportz.in/uploads/logo/logo_5f393de365bf81.png" alt="logo" class="logo">
+                                </p>
+                                <p>
+                                    esportz.in – A fan engagement and a gaming experience platform dedicated to esports and the gaming community. esportz.in provides latest gaming news to hard-core gamers as well as casual gamers. It’s a one stop hub for all gaming needs where gamers can
+                                    get latest updates about gaming and also participate in competitive community tournaments. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-sm-4 -->
+
+                <!-- footer widget random posts-->
+
+
+
+                <!-- footer widget follow us-->
+                <div class="col-sm-6 col-xs-12" style="margin-top: 62px;">
+                    <div class="col-sm-12 footer-widget f-widget-follow">
+                        <div class="row">
+                            <h4 class="title w-100">Social Media</h4>
+                            <ul>
+                                <!--Include social media links-->
+                                <!--if facebook url exists-->
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/esportzofficial" target="_blank"><i class="icon-facebook"></i></a>
+                                </li>
+                                <!--if twitter url exists-->
+                                <li>
+                                    <a class="twitter" href="https://twitter.com/esportzofficial" target="_blank"><i class="icon-twitter"></i></a>
+                                </li>
+                                <!--if pinterest url exists-->
+                                <!--if instagram url exists-->
+                                <li>
+                                    <a class="instagram" href="https://www.instagram.com/esportz.in/" target="_blank"><i class="icon-instagram"></i></a>
+                                </li>
+                                <!--if linkedin url exists-->
+
+                                <!--if vk url exists-->
+
+                                <!--if telegram url exists-->
+                                <li>
+                                    <a class="telegram" href="https://t.me/esportzindia" target="_blank"><i class="icon-telegram"></i></a>
+                                </li>
+
+                                <!--if youtube url exists-->
+                                <li>
+                                    <a class="youtube" href="https://www.youtube.com/channel/UCHYq5NdnrfYgoA5vBivViAw" target="_blank"><i class="icon-youtube"></i></a>
+                                </li>
+
+                                <!--if rss active-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- newsletter -->
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="widget-newsletter w-100">
+                                <p>Subscribe here to get interesting stuff and updates!</p>
+                                <form action="https://esportz.in/add-to-newsletter" method="post" accept-charset="utf-8">
+                                    <input type="hidden" name="varient_csrf_token" value="3fe463e28eff3cb43d2dcce4d317da41">
+                                    <div class="newsletter">
+                                        <div class="left">
+                                            <input type="email" name="email" id="newsletter_email_footer" maxlength="199" placeholder="Email Address" required="">
+                                        </div>
+                                        <div class="right">
+                                            <button type="submit" id="btn_subscribe_footer" class="newsletter-button">Subscribe</button>
+                                        </div>
+                                    </div>
+                                    <p id="newsletter">
+                                    </p>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- .col-md-3 -->
+            </div>
+            <!-- .row -->
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-bottom-left">
+                            <p>Copyright@2020 Gig Work Private Limited</p>
+                        </div>
+
+                        <div class="footer-bottom-right">
+                            <ul class="nav-footer">
+                                <li>
+                                    <a href="https://esportz.in/contact">Contact </a>
+                                </li>
+                                <li>
+                                    <a href="https://esportz.in/terms-conditions">Terms &amp; Conditions </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row -->
+            </div>
+        </div>
+    </footer>
+    <!-- footer-area -->
+    <!-- <footer>
+            <div class="footer-top footer-bg s-footer-bg">
+                <div class="newsletter-area s-newsletter-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="newsletter-wrap">
+                                    <div class="section-title newsletter-title">
+                                        <h2>Our <span>Newsletter</span></h2>
+                                    </div>
+                                    <div class="newsletter-form">
+                                        <form action="#">
+                                            <div class="newsletter-form-grp">
+                                                <i class="far fa-envelope"></i>
+                                                <input type="email" placeholder="Enter your email...">
+                                            </div>
+                                            <button>SUBSCRIBE <i class="fas fa-paper-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="index.html"><img src="img/logo/logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Gemas marketplace the relase etras thats sheets continig passag.</p>
+                                    <div class="footer-contact">
+                                        <ul>
+                                            <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box W75 Street
+                                                lan West new queens</li>
+                                            <li><i class="fas fa-headphones"></i> <span>Phone : </span>+24 1245 654 235</li>
+                                            <li><i class="fas fa-envelope-open"></i><span>Email : </span>info@exemple.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Products</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Graphics (26)</a></li>
+                                        <li><a href="#">Backgrounds (11)</a></li>
+                                        <li><a href="#">Fonts (9)</a></li>
+                                        <li><a href="#">Music (3)</a></li>
+                                        <li><a href="#">Photography (3)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Need Help?</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Refund Policy</a></li>
+                                        <li><a href="#">Affiliate</a></li>
+                                        <li><a href="#">FAQUse Cases</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Follow us</h5>
+                                </div>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-35">
+                                    <h5>Newsletter Sign Up</h5>
+                                </div>
+                                <div class="footer-newsletter">
+                                    <form action="#">
+                                        <input type="text" placeholder="Enter your email">
+                                        <button><i class="fas fa-rocket"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-fire"><img src="img/images/footer_fire.png" alt=""></div>
+                <div class="footer-fire footer-fire-right"><img src="img/images/footer_fire.png" alt=""></div>
+            </div>
+            <div class="copyright-wrap s-copyright-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="copyright-text">
+                                <p>Copyright © 2020 <a href="#">Geco</a> All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 d-none d-md-block">
+                            <div class="payment-method-img text-right">
+                                <img src="img/images/card_img.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+
+
+
+
+
+    <!-- JS here -->
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+    <script src="js/jquery.odometer.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+<script>
+    function PathLoader(el) {
+        this.el = el;
+        this.strokeLength = el.getTotalLength();
+
+        // set dash offset to 0
+        this.el.style.strokeDasharray =
+            this.el.style.strokeDashoffset = this.strokeLength;
+    }
+
+    PathLoader.prototype._draw = function(val) {
+        this.el.style.strokeDashoffset = this.strokeLength * (1 - val);
+    }
+
+    PathLoader.prototype.setProgress = function(val, cb) {
+        this._draw(val);
+        if (cb && typeof cb === 'function') cb();
+    }
+
+    PathLoader.prototype.setProgressFn = function(fn) {
+        if (typeof fn === 'function') fn(this);
+    }
+
+    $('#form').submit(function(event) {
+        $('#loading').show();
+        event.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LdheCUaAAAAAC5XyStdUmiry7wiU07GFjMIwOAM', {
+                action: 'form'
+            }).then(function(token) {
+                var formData = new FormData($('#form')[0]);
+                formData.append('g-recaptcha-response', token)
+                $.ajax({
+                    url: 'https://esportz-regs.herokuapp.com/fifa_submit',
+                    // url: 'http://192.168.0.101:8000/fifa_submit',
+                    type: 'post',
+                    dataType: 'json',
+                    data: formData,
+                    success: function(data) {
+                        // alert(data);
+                        if (data['data'] == 1) {
+                            document.body.classList.add('active');
+
+                            var body = document.body,
+                                svg = document.querySelector('svg path');
+
+                            if (svg !== null) {
+                                svg = new PathLoader(svg);
+
+                                setTimeout(function() {
+                                    document.body.classList.add('active');
+                                    svg.setProgress(1);
+                                }, 200);
+                            }
+                            $('#form').hide();
+                            $('#loading').hide();
+                        }
+                    },
+                    error: function() {
+                        alert("Error Occured Please Reload the page and fill the form again.");
+                        $('#loading').hide();
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+            });
+        });
+
+    });
+</script>
+
+</html>
